@@ -1,0 +1,10 @@
+modelname = 'MT_HPN'
+cuda = '0'
+lamda = 1/2
+SE = 4
+Destrieux = 148
+AAL90 = 90
+node = AAL90
+atlas = 'AAL90'
+rs = 3
+rd = 1
