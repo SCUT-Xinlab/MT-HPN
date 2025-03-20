@@ -409,13 +409,13 @@ class MT_PCN(nn.Module):    # MT_HPN only base, BC-GCN + PB-CAB  homogeneous pat
         y = y.view(batchsize, -1)
         z = z.view(batchsize, -1)
 
-        y = self.fc_1(y)  # 性别
+        y = self.fc_1(y)
         y = F.relu(y)
-        z = self.fc_2(z)  # 年龄
+        z = self.fc_2(z)
         z = F.relu(z)
 
-        y = self.fc_3(y)  # 性别
-        z = self.fc_4(z)  # 年龄
+        y = self.fc_3(y)
+        z = self.fc_4(z)
 
         return y, z
 
